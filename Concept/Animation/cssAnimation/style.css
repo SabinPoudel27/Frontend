@@ -1,0 +1,45 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(37, 37, 37);
+  color: aliceblue;
+}
+
+@keyframes scale {
+  from {
+    scale: 0;
+    transform: translate(0px, 0px);
+  }
+
+  to {
+    scale: 1;
+    transform: translate(100px, 300px);
+    background-color: rgb(163, 238, 120);
+    transform: perspective(300px);
+  }
+}
+
+#box {
+  height: 500px;
+  width: 500px;
+  background-color: rgb(161, 161, 243);
+  border-radius: 10px;
+  margin-top: 20px;
+  animation: scale 3s cubic-bezier(0.075, 0.82, 0.165, 1) 1 alternate forwards;
+}
+
+#text {
+  color: aqua;
+}
+
+.flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+/* CSS Animation */
